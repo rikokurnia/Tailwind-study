@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <!-- cdn tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <!-- script modified -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3,25rem',
+                    },
+                    fontFamily: {
+                        inter: ['Inter'],
+                    },
+                colors: {
+                    riko:'#1fb6ff',
+                },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+        <!-- make a simple navbar -->
+   <header>
+        <nav class="flex justify-between bg-red-600	 p-6">
+            <h4 class="hover:bg-red-800 rounded p-4">MyKoo</h4>
+            <ul class="flex  space-x-14 pl-56 p-4 -w-56 justify-end">
+                <li class="hover:bg-yellow-200 rounded text-green-400 w-20">HOME</li>
+                <li class="hover:bg-yellow-200 rounded text-green-400 w-20">ABOUT</li>
+                <li class="hover:bg-yellow-200 rounded text-green-400 w-20">CONTACT</li>
+            </ul>
+        </nav>
+   </header>
+     <!-- learn typoghrapy -->
+   <section class="font-inter max-w-3xl mx-auto">
+    <h2 class="mb-4 text-2xl text-riko">Belajar typoghrapy wit RIko ya guys</h2>
+    <div class="mb-4 font-semibold text-lg">By: Riko kurnia ganteng</div>
+    <p class="mb-4">Lorem ipsum dolor sit amet <a href="#" class="underline font-semibold">consectetur</a> , adipisicing elit. Molestias eius mollitia repellendus rerum suscipit veritatis laborum iusto numquam aperiam incidunt delectus nulla, iste qui expedita ullam quas accusamus eum odit omnis tempora error. Eius, ipsum dolorum quod earum tempore nesciunt ab, sapiente eos minima laboriosam provident consectetur corrupti aperiam ad.</p>
+    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque libero in expedita illo doloribus voluptate aliquam! Omnis, quasi tempore.</p>
+    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nisi dolore dolores earum sit! Rerum cum laboriosam dolorum sint consectetur nostrum libero ullam earum alias. Magni aut eos quasi ipsam.</p>
+</section>
+
+        <!-- learn background tailwind -->
+    <div class="max-w-xl h-96 bg-slate-600 mt-[42px] ml-16 overflow-y-scroll bg-fixed" style="background-image: url('https://source.unsplash.com/1000x600?programming');">
+        <p class="p-9 text-2xl text-white text-justify	">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet non corrupti esse dolorum doloremque quis vel ipsa placeat commodi iusto ut porro qui et, cum cumque quod sit. Voluptas hic placeat ex et minus dolore vitae eveniet pariatur esse non dolorum, iste ipsa, fugiat suscipit dolores nam cupiditate explicabo asperiores. Tempora tempore natus eius adipisci odio placeat est rerum recusandae, mollitia amet laboriosam minima nemo qui provident quisquam culpa quo consequatur expedita facilis. Dolore velit sunt sint voluptate voluptates praesentium dolor non fugit, fuga accusamus nihil unde doloremque architecto! Laboriosam, unde impedit, nam tempore dolorum quas exercitationem quo expedita velit harum quaerat nemo non, obcaecati quasi nostrum nesciunt porro? Neque beatae blanditiis ad impedit, consequuntur quidem amet, voluptas eius, doloremque quam nobis fugiat. Doloribus nisi similique deserunt tempore dolores tenetur totam quasi corporis alias, debitis iure doloremque, voluptate sint praesentium minima commodi labore facilis sunt laboriosam ullam qui at soluta?</p>
+    </div>
+    <div class="mb-96"></div>
+
+    <div class="max-w-xl h-96 bg-slate-600 mt-[42px] mx-auto bg-contain bg-no-repeat bg-center rounded-xl	" style="background-image: url('./assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');">
+    </div>
+
+</html>
