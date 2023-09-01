@@ -28,32 +28,59 @@
     </script>
 </head>
 <body>
-        <!-- learn border -->
-     <div class="max-w-sm h-40 bg-slate-300 my-16 mx-auto text-center leading-10 pt-14 text-blue-400 hover:rounded-full hover:bg-slate-500  transition duration-500  ease-out hover:ease-in-out border-solid border-2 border-sky-500">Border 1</div>
-     <div class="grid grid-cols-3 divide-x order-solid border-2 border-sky-500 bg-yellow-200 text-center">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-      </div>
-
-      <!-- learn effect -->
-      <div class="max-w-xl h-96 bg-slate-600 mt-[42px] mx-auto bg-contain bg-no-repeat bg-center rounded-xl	 opacity-30	" style="background-image: url('./assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');">
+       <!-- Learn pseudo class  -->
+    <div class="my-20"></div>
+        <button class="my10 bg-teal-300 px-5 py-2 rounded-full text-white  block mx-auto
+         hover:bg-teal-600 active:bg-teal-700 focus:ring-slate-800 focus:ring-4">Simpan</button>
+    <div class="mg-96"></div>
+        <!--?styling based on parent state use (group)
+                -learn selection
+                -learn pseudo element 
+                -learn float  -->
+    <div class="max-w-lg my-10 border border-slate-700 rounded-xl mx-auto p-5 hover:bg-teal-500 group font-serif">
+        <h5 class="text-slate-600 font-bold mb-2 text-lg group-hover:text-white">Riko ganz</h5>
+        <p class="text-slate-500 
+                     group-hover:text-white
+                      selection:bg-lime-200
+                       selection:text-teal-950 
+                       first-line:text-lg
+                       first-line:font-semibold
+                        first-letter:text-7xl
+                        first-letter:float-left
+                        first-letter:mr-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat porro modi fugit rem repellendus non minus magni,
+             nisi quia veniam asperiores, odit velit nesciunt sed dolorem consequatur provident quam.
+        </p>
     </div>
-        <!--? shadow color  -->
-        <button class=" flex justify-center mx-auto bg-cyan-500 shadow-xl		 shadow-cyan-500/50 w-36 h-32 mt-32 leading-10 pt-12">Subscribe</button>
-        <!--? mix blend  -->
-    <div class="flex justify-center -space-x-14">
-        <div class="mix-blend-lighten bg-blue-400 w-36 h-36 mt-14"></div>
-        <div class="mix-blend-lighten bg-pink-400 w-36 h-36 mt-14"></div>
-      </div>
 
-      <!-- Learn filters -->
-        <!--?effect blur  -->
-        <div class="max-w-sm h-60 bg-slate-600 mt-[20px] mx-auto mb-10 bg-fixed blur-sm" style="background-image: url('https://source.unsplash.com/1000x600?programming');">
-           
+        <!-- learn pseudo element -->
+        <div class="max-w-lg border border-slate-500 rounded-xl mx-auto shadow-md font-inter p-5">
+            <form action="">
+                <label for="email">
+                    <span class= " block font-semibold mb-1 text-slate-600 
+                                    after:content-['*'] after:text-pink-500 after:ml-1">Email</span>
+                    <input type="email" id="email" placeholder="Masukan email anda" 
+                            class=" peer px-3 py-2 border shadow rounded w-full block text-sm 
+                            invalid:text-pink-500  invalid:border-pink-600">
+                    <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                        Please provide a valid email address.
+                    </p>
+                </label>
+            </form>
         </div>
-         <!--?effect brightnest  -->
-         <div class="max-w-sm h-72 bg-slate-600 mt-[20px] mx-auto mb-10 bg-fixed  brightness-50	" style="background-image: url('https://source.unsplash.com/1000x600?programming');">
-        </div>>
+
+        <!--make a chosen file  -->
+        <div class="my-3 max-w-md mx-auto">
+            <label
+              for="formFile"
+              class="mb-1 inline-block text-neutral-700"
+              >Masukan file</label
+            >
+            <input
+              class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+              type="file"
+              id="formFile" />
+          </div>
+        
 </body>
 </html>
