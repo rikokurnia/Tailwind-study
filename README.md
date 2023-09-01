@@ -16,3 +16,30 @@
 	-make configuration color in tailwind.config.js
 	-conf environment like use npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch
 	-make automaiccaly with npm run dev
+
+### day 3 : 
+	-Arbiratry value[nilai sembarang] > example : bg-[#fff], mt-[42px]
+	-bg-attachment > bg-fixed, bg-local, bg-scroll
+	-learn bg like bg size, bg-position, bg-repeat,  
+	- memberi style css serta memasukin img random dari unsplash
+
+### day 4 : 
+	-learn about border like > rounder and divide
+	-learn effect like : shadow color and mix blend
+	-learn filter like : brightnest, grayscale, brightnest and blur
+
+	-pseudo class
+	  if you want make the button on the middle you have to make the default button to block(default:black) and you can put mx-auto
+		-focus > it's condition which start before button click(active)
+			--focus:ring > default is blue, you can change the color
+		-groub > make child access parent element, how to: use group in the parent element, and you can use group-hover/active/focus in the child element
+		-selection > selection text as a you want
+		-float > Utilities for controlling the wrapping of content around an element. > float left, float right, float none
+
+	-pseudo element
+		-make a validation input email with peer, after and invalid
+		-peer > make relationship between siblings > peer(siblings), peer-invisible(siblings2)
+		- after and before is a pseudo element which there will be input an element (before:content[''])
+		-invalid > just could use from element input 
+
+ 
