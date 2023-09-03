@@ -1,86 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwind</title>
     <!-- cdn tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- script modified -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    spacing: {
-                        13: '3,25rem',
-                    },
-                    fontFamily: {
-                        inter: ['Inter'],
-                    },
-                colors: {
-                    riko:'#1fb6ff',
-                },
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3,25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              riko: "#1fb6ff",
+            },
+            animation: {
+              "spin-slow": "spin 6s linear infinite",
+              'goyang': 'goyang 2s linear infinite'
+            },
+            keyframes: {
+              goyang: {
+                "0%, 100%": { transform: "rotate(-8deg)" },
+                "50%": { transform: "rotate(8deg)" },
+              },
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body>
-       <!-- Learn pseudo class  -->
-    <div class="my-20"></div>
-        <button class="my10 bg-teal-300 px-5 py-2 rounded-full text-white  block mx-auto
-         hover:bg-teal-600 active:bg-teal-700 focus:ring-slate-800 focus:ring-4">Simpan</button>
-    <div class="mg-96"></div>
-        <!--?styling based on parent state use (group)
-                -learn selection
-                -learn pseudo element 
-                -learn float  -->
-    <div class="max-w-lg my-10 border border-slate-700 rounded-xl mx-auto p-5 hover:bg-teal-500 group font-serif">
-        <h5 class="text-slate-600 font-bold mb-2 text-lg group-hover:text-white">Riko ganz</h5>
-        <p class="text-slate-500 
-                     group-hover:text-white
-                      selection:bg-lime-200
-                       selection:text-teal-950 
-                       first-line:text-lg
-                       first-line:font-semibold
-                        first-letter:text-7xl
-                        first-letter:float-left
-                        first-letter:mr-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat porro modi fugit rem repellendus non minus magni,
-             nisi quia veniam asperiores, odit velit nesciunt sed dolorem consequatur provident quam.
-        </p>
+  </head>
+  <body>
+    <!-- learn transition and transform -->
+    <hr class="my-20" />
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-lg shadow-lg group">
+      <div
+        class="w-full h-full bg-red-500 shadow-lg transition origin-top-right group-hover:rotate-180 ease-in-out delay-300 rounded-full animate-goyang"
+      ></div>
     </div>
 
-        <!-- learn pseudo element -->
-        <div class="max-w-lg border border-slate-500 rounded-xl mx-auto shadow-md font-inter p-5">
-            <form action="">
-                <label for="email">
-                    <span class= " block font-semibold mb-1 text-slate-600 
-                                    after:content-['*'] after:text-pink-500 after:ml-1">Email</span>
-                    <input type="email" id="email" placeholder="Masukan email anda" 
-                            class=" peer px-3 py-2 border shadow rounded w-full block text-sm 
-                            invalid:text-pink-500  invalid:border-pink-600">
-                    <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
-                        Please provide a valid email address.
-                    </p>
-                </label>
-            </form>
-        </div>
+    <div class="mb-20"></div>
+    <!-- animation bounce and custom animation spin -->
+    <div
+      class="w-40 h-40 bg-teal-500 mx-auto rounded-lg shadow-lg animate-spin-slow group"
+    >
+      <div
+        class="w-full h-full bg-red-500 shadow-lg transition origin-top-right group-hover:rotate-180 ease-in-out delay-300 animate-bounce rounded-full"
+      ></div>
+    </div>
 
-        <!--make a chosen file  -->
-        <div class="my-3 max-w-md mx-auto">
-            <label
-              for="formFile"
-              class="mb-1 inline-block text-neutral-700"
-              >Masukan file</label
-            >
-            <input
-              class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
-              type="file"
-              id="formFile" />
-          </div>
-        
-</body>
+    <div class="mb-20"></div>
+  </body>
 </html>
