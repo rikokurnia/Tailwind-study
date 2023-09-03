@@ -42,4 +42,10 @@
 		- after and before is a pseudo element which there will be input an element (before:content[''])
 		-invalid > just could use from element input 
 
+### day 5 
+	-Learn transform > skew,translate,scale, rotate, origin
+ 		--skew : miring, origin : move origin(tempat asal)
+   	-learn animation and transition like delay, duration, timing function(ease in out)
+    		--animation > like bounce, spin, pulse, and ping
+
  
