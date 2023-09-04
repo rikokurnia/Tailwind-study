@@ -47,5 +47,16 @@
  		--skew : miring, origin : move origin(tempat asal)
    	-learn animation and transition like delay, duration, timing function(ease in out)
     		--animation > like bounce, spin, pulse, and ping
+### day6 
+    Learn about layout1 
+	 --positioning > absolute, relative, static
+				-fixed > to viewport
+	  --Floating > memindahkan posisi elemen
+		 -flex absolute translate-x-1/2 left-1/2 -top-2 > membuat elemen ditengah
+	  --container > manage an element and min-width, (usually use to collumns)
+	  --smooth-scroling > make a web scroll smooth
+	  --columns > tailwind make it easy, we can put on element container or parent and boom it will be fitted that we want
+		
+	
 
  
