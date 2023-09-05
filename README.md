@@ -53,9 +53,25 @@
 				-fixed > to viewport
 	  --Floating > memindahkan posisi elemen
 		 -flex absolute translate-x-1/2 left-1/2 -top-2 > membuat elemen ditengah
+
 	  --container > manage an element and min-width, (usually use to collumns)
 	  --smooth-scroling > make a web scroll smooth
 	  --columns > tailwind make it easy, we can put on element container or parent and boom it will be fitted that we want
+
+### day7
+	Learn Responssive Design
+	  Every utility class in Tailwind can be applied conditionally at different breakpoints.
+
+		-Container > membuat jarak maksimal dan minimal(full layout ketika mobile)
+		-md:bg-blue lg:bg-transparent > key if you want to one of prefix in specified element
+		- Learn object fit(cover,contain and other) and position
+		-Breakpoints : sm,md,lg,xl,2xl (start with min-width)
+		   --example : <img class="w-16 md:w-32 lg:w-48" src="...">
+		-tracking > distance among words (white-space)
+		
+		Working mobile first : 
+			-- What this means is that unprefixed utilities (like uppercase) take effect on all screen sizes,
+				 while prefixed utilities (like md:uppercase) only take effect at the specified breakpoint and above.
 		
 	
 
