@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,26 +42,66 @@
     </script>
   </head>
   <body>
-    <!-- Learn Responsive Design -->
-    <div class="container px-4 py-5 mt-4  rounded-lg shadow-lg mx-auto font-inter max-w-md sm:max-w-lg lg:max-w-5xl sm:bg-red-400 md:bg-teal-400 lg:bg-sky-400 xl:bg-pink-400">
-      <h3 class="text-4xl font-bold text-slate-800">
-        Riko <span class="text-sky-500">Kurnia</span> Ganz
-      </h3>
-      <img
-        src="./assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg"
-        alt="programming"
-        class="mt-4 rounded-xl shadow-xl lg:object-cover lg:object-center lg: sm:mt-6 sm:w-full sm:max-h-60"
-      />
-      <h2 class="mt-6 text-2xl font-semibold sm:text-3xl sm:text-slate-200">Let's go learn with me</h2>
-      <p class="mt-2 text-slate-600 mt-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-        necessitatibus dignissimos temporibus similique 
-      </p>
-      <div class="mt-4 sm:mt-6 ">
-        <a href="#" class="px-4 py-3 sm:text-base bg-purple-500 text-slate-100 tracking-wide font-semibold text-sm uppercase shadow-lg rounded-full">Folowing my Instagram</a>
-      </div>
-    </div>
 
-    <div class="mb-16"></div>
+    
+    <!-- Learn Flexbox -->
+      <!--? 
+        Flex direction > row,row-reverse,col,col-reverse
+        Flex wrap > wrap,nowrap,wrap-reverse
+        make a galery > with flex
+      -->
+
+      <h3 class="text-center text-xl my-4 font-bold">
+        My Galery
+      </h3>
+
+      <div class="container mx-auto p-4 sm:justify-evenly font-inter sm:flex sm:flex-wrap sm:gap-6 ">
+        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
+         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
+         <div class="mx-6 my-4">
+           <div class="py-2 font-bold text-xl">Image Content</div>
+           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
+         </div>
+        </div>
+        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
+         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
+         <div class="mx-6 my-4">
+           <div class="py-2 font-bold text-xl">Image Content</div>
+           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
+         </div>
+        </div>
+        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
+         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
+         <div class="mx-6 my-4">
+           <div class="py-2 font-bold text-xl">Image Content</div>
+           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
+         </div>
+        </div>
+        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
+         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
+         <div class="mx-6 my-4">
+           <div class="py-2 font-bold text-xl">Image Content</div>
+           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
+         </div>
+        </div>
+        
+        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
+         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
+         <div class="mx-6 my-4">
+           <div class="py-2 font-bold text-xl">Image Content</div>
+           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
+         </div>
+        </div>
+      </div>
+
+
+    <div class="flex flex-wrap  bg-green-300 my-14 mx-4 border border-solid border-4 border-green-700 rounded-lg">
+      <p class="mx-3 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium optio nesciunt doloribus expedita eaque animi eligendi dignissimos quod iste, deleniti ipsa, sit molestias quae consequatur eveniet, rerum earum id non voluptates culpa! Veritatis assumenda omnis ullam recusandae laudantium eligendi minus cumque sint hic, nostrum in fugiat facilis repellendus repellat?</p>
+      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-sky-500 text-center">Flexbox 1</div>
+      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-yellow-500 text-center">Flexbox 2</div>
+      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-pink-500 text-center">Flexbox 3</div>
+      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-green-500 text-center">Flexbox 4</div>
+      <div class=" blocktext-2xl text-slate-200 m-5 p-3 max-w-sm bg-slate-500 text-center">Flexbox 5</div>
+    </div>
   </body>
 </html>
