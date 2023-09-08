@@ -72,6 +72,17 @@
 		Working mobile first : 
 			-- What this means is that unprefixed utilities (like uppercase) take effect on all screen sizes,
 				 while prefixed utilities (like md:uppercase) only take effect at the specified breakpoint and above.
+
+
+### day 8
+	Learn about Flexbox
+ 		- how to make a galery card with flexbox
+   		- overflow > fitted an element in container
+     		- flex wrap > wrap,nowrap and wrap-reverse
+       		- flex > justify,align
+	 Lack of you learn
+  		-Learn more about flex shrink and grow
+	 	
 		
 	
 
