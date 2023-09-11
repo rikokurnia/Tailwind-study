@@ -43,65 +43,55 @@
   </head>
   <body>
 
-    
-    <!-- Learn Flexbox -->
-      <!--? 
-        Flex direction > row,row-reverse,col,col-reverse
-        Flex wrap > wrap,nowrap,wrap-reverse
-        make a galery > with flex
-      -->
+    <!-- display grid -->
+      <!--? for use this, firstly add 'grid'
+             grid-cols > make any size collumns on your all screen sizes
+              gap > give distance on your element-->
 
-      <h3 class="text-center text-xl my-4 font-bold">
-        My Galery
-      </h3>
+            <div class="mt-10 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+              <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to Our presentation</span></h2>
+              <div class="h-15 text-lg text-slate-700 font-semibold md:col-start-2 md:row-start-2 md:flex"><span class="self-end">Riko kurnia ganz</span></div>
 
-      <div class="container mx-auto p-4 sm:justify-evenly font-inter sm:flex sm:flex-wrap sm:gap-6 ">
-        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
-         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
-         <div class="mx-6 my-4">
-           <div class="py-2 font-bold text-xl">Image Content</div>
-           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
-         </div>
-        </div>
-        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
-         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
-         <div class="mx-6 my-4">
-           <div class="py-2 font-bold text-xl">Image Content</div>
-           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
-         </div>
-        </div>
-        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
-         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
-         <div class="mx-6 my-4">
-           <div class="py-2 font-bold text-xl">Image Content</div>
-           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
-         </div>
-        </div>
-        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
-         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
-         <div class="mx-6 my-4">
-           <div class="py-2 font-bold text-xl">Image Content</div>
-           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
-         </div>
-        </div>
-        
-        <div class="container rounded-lg border shadow-md overflow-hidden mb-6 sm:w-64">
-         <img src="https://source.unsplash.com/600x400?scenery" alt="scenery img" class="w-full"/>
-         <div class="mx-6 my-4">
-           <div class="py-2 font-bold text-xl">Image Content</div>
-           <p class="text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit aperiam rerum aut dignissimos harum culpa vero omnis vel.</p>
-         </div>
-        </div>
-      </div>
+              <div class="h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+              </div>
+              <div class="md:col-start-3 h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto10.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
 
+              </div>
+              <div class="h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
 
-    <div class="flex flex-wrap  bg-green-300 my-14 mx-4 border border-solid border-4 border-green-700 rounded-lg">
-      <p class="mx-3 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium optio nesciunt doloribus expedita eaque animi eligendi dignissimos quod iste, deleniti ipsa, sit molestias quae consequatur eveniet, rerum earum id non voluptates culpa! Veritatis assumenda omnis ullam recusandae laudantium eligendi minus cumque sint hic, nostrum in fugiat facilis repellendus repellat?</p>
-      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-sky-500 text-center">Flexbox 1</div>
-      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-yellow-500 text-center">Flexbox 2</div>
-      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-pink-500 text-center">Flexbox 3</div>
-      <div class=" blocktext-2xl text-slate-500 m-5 p-3 max-w-sm bg-green-500 text-center">Flexbox 4</div>
-      <div class=" blocktext-2xl text-slate-200 m-5 p-3 max-w-sm bg-slate-500 text-center">Flexbox 5</div>
-    </div>
+              </div>
+              <div class="h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+              <div class="h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto4.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+              <div class="md:col-start-2 h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto5.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+              <div class="md:col-start-4 h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto6.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+              <div class=" h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto7.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+              <div class="md:col-start-3 h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto8.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+              <div class="md:col-start-3 h-15 bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden transition-all duration-500 hover:scale-95">
+                <div class="h-full w-full bg-[url('/assets/foto9.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"></div>
+
+              </div>
+            </div>
+
   </body>
 </html>
