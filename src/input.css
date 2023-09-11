@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    color: theme(colors.riko)
+  }
+}
+
+@layer components {
+  .grid-card{
+    @apply  bg-sky-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3]  relative overflow-hidden transition-all duration-500 hover:scale-95;
+  }
+}
