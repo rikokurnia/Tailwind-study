@@ -90,6 +90,39 @@
               	     -gap > give distance on your element
 		     -aspect ration > video[16:9] or you can customize with arbitrary value [4:3]
        		     -overflow > a utilities for controlling the container within element
+
+### day 10 
+	directive and function
+	you can make auto rename tag with cdn, but you have to include the tailwind.config.js
+	-in mode @apply we can't include the group so we must added manual from class utilities
+	-Use the @layer directive to tell Tailwind that which element that we want customize
+	-Use @apply This is useful when you need to write custom CSS and use the same syntax you’re used to using in your HTML.
+		@layer base {	//custom defaultcss
+ 			 h1 {
+  			  @apply text-2xl;
+			  }
+			}
+
+		@layer components {  //for make a component
+  			.btn-blue {
+  			  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+ 			 }
+			}
+
+		@layer utilities {  //custom utilities default tailwind
+		  	.filter-none {
+			    filter: none;
+  			}
+ 			}
+
+	Function
+	  -Use the theme() function to access your Tailwind config values 
+		@layer base {
+ 			 h1 {
+				@apply text-riko //different way use instead use theme
+   				 color: theme(colors.riko)	//theme is better because its explained to style css for have specific value
+  			  }
+			}
 	 	
 		
 	
