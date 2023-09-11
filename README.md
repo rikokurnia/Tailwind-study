@@ -82,6 +82,14 @@
        		- flex > justify,align
 	 Lack of you learn
   		-Learn more about flex shrink and grow
+
+### day 9
+	learn about display grid > collumn and row
+ 		for use this, firstly add 'grid'
+        	     -grid-cols > make any size collumns on your all screen sizes
+              	     -gap > give distance on your element
+		     -aspect ration > video[16:9] or you can customize with arbitrary value [4:3]
+       		     -overflow > a utilities for controlling the container within element
 	 	
 		
 	
